@@ -1,6 +1,11 @@
-  while (i > 1 && i < 4) { cardo.innerHTML = cardo.innerHTML + '<div class="card"></div>'; i++; }
-    while (i > 3 && i < 6) { cardo.innerHTML = cardo.innerHTML + '<div class="card"></div>'; i++; }
-    while (i > 5 && i < 8) { cardo.innerHTML = cardo.innerHTML + '<div class="card"></div>'; i++; }
-    while (i > 7 && i < 10) { cardo.innerHTML = cardo.innerHTML + '<div class="card"></div>'; i++; }
-    while (i > 9 && i < 12) { cardo.innerHTML = cardo.innerHTML + '<div class="card"></div>'; i++; }
-    while (i > 11 && i < 14) { cardo.innerHTML = cardo.innerHTML + '<div class="card"></div>'; i++; }
+O jeito era fazer uma array que coloca as cartas em sua posição e colocar números para as imagens e essa arrya trocar de imagens automáticamente
+ if (cardsel !== null) {
+        if (cardsel !== carta) {
+            carta1.classList.remove("front");
+            carta2.classList.remove("back");
+        }
+        else{
+        acertos++
+        }
+    }
+    else { }
