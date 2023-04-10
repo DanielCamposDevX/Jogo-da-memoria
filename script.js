@@ -52,6 +52,7 @@ function turncard(carta) {
     const carta2 = carta.querySelector(".l2");
     carta2.classList.add("back");
     cont++;
+    carta.disabled = true;
     setTimeout(cardcomp, 1000, carta);
 }
 
@@ -59,7 +60,7 @@ function cardcomp(carta) {
     cardsel = document.querySelector(".selected");
     console.log(cardsel);
     if (cardsel != null) {
-        if (cardsel.innerHTML == carta.innerHTML && cardsel != carta) {
+        if (cardsel.innerHTML == carta.innerHTML) {
             carta.disabled = true;
             cardsel.disabled = true;
             cardsel.classList.remove("selected");
@@ -80,6 +81,8 @@ function cardcomp(carta) {
             cardsel2.classList.remove("back");
             cardsel.classList.remove("selected");
             carta.classList.remove("selected");
+            carta.disabled = false;
+            cardsel.disabled = false;
         }
     }
     else { carta.classList.add("selected"); }
