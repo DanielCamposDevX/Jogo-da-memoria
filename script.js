@@ -27,18 +27,18 @@ function principal() {
     cardtypes[13] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/tripletsparrot.gif"></div> </button>';
     const cardo = document.querySelector('.cards');
     const carts = [];
-    carts.length = prompt('Quantas Cartas?');
-    let resto = carts.length % 2;
+    let quant= prompt('Quantas Cartas?');
+    let resto = quant % 2;
     let acertos = 0;
     let i = 0;
-    if (resto == 0 && carts.length > 2 && carts.length < 15) {
-        while (i < carts.length) {
+    if (resto == 0 && quant > 2 && quant < 15) {
+        while (i < quant) {
             carts[i] = cardtypes[i];
             i++;
         }
         carts.sort(comparador);
         i = 0;
-        while (i < carts.length) {
+        while (i < quant) {
             cardo.innerHTML = cardo.innerHTML + carts[i];
             i++;
         }
