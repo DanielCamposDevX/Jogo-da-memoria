@@ -11,23 +11,22 @@ principal();
 
 function principal() {
     const cardtypes = [];
-    cardtypes[0] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/bobrossparrot.gif"></div> </div>';
-    cardtypes[1] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/bobrossparrot.gif"></div> </div>';
-    cardtypes[2] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/explodyparrot.gif"></div> </div>';
-    cardtypes[3] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/explodyparrot.gif"></div> </div>';
-    cardtypes[4] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/fiestaparrot.gif"></div> </div>';
-    cardtypes[5] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/fiestaparrot.gif"></div> </div>';
-    cardtypes[6] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/metalparrot.gif"></div> </div>';
-    cardtypes[7] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/metalparrot.gif"></div> </div>';
-    cardtypes[8] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/revertitparrot.gif"></div> </div>';
-    cardtypes[9] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/revertitparrot.gif"></div> </div>';
-    cardtypes[10] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/unicornparrot.gif"></div> </div>';
-    cardtypes[11] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/unicornparrot.gif"></div> </div>';
-    cardtypes[12] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/tripletsparrot.gif"></div> </div>';
-    cardtypes[13] = '<div data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/tripletsparrot.gif"></div> </div>';
-
+    cardtypes[0] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/bobrossparrot.gif"></div> </button>';
+    cardtypes[1] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/bobrossparrot.gif"></div> </button>';
+    cardtypes[2] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/explodyparrot.gif"></div> </button>';
+    cardtypes[3] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/explodyparrot.gif"></div> </button>';
+    cardtypes[4] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/fiestaparrot.gif"></div> </button>';
+    cardtypes[5] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/fiestaparrot.gif"></div> </button>';
+    cardtypes[6] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/metalparrot.gif"></div> </button>';
+    cardtypes[7] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/metalparrot.gif"></div> </button>';
+    cardtypes[8] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/revertitparrot.gif"></div> </button>';
+    cardtypes[9] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/revertitparrot.gif"></div> </button>';
+    cardtypes[10] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/unicornparrot.gif"></div> </button>';
+    cardtypes[11] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/unicornparrot.gif"></div> </button>';
+    cardtypes[12] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/tripletsparrot.gif"></div> </button>';
+    cardtypes[13] = '<button data-test="card" onclick="turncard(this)" class="card v"> <div class="l1 face"><img data-test="face-up-image" src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img data-test="face-down-image" class=img src="./imagens/tripletsparrot.gif"></div> </button>';
     const cardo = document.querySelector('.cards');
-    let carts = [];
+    const carts = [];
     carts.length = prompt('Quantas Cartas?');
     let resto = carts.length % 2;
     let acertos = 0;
@@ -61,11 +60,14 @@ function cardcomp(carta) {
     console.log(cardsel);
     if (cardsel != null) {
         if (cardsel.innerHTML == carta.innerHTML && cardsel != carta) {
+            carta.disabled = true;
+            cardsel.disabled = true;
             cardsel.classList.remove("selected");
             carta.classList.remove("selected");
             cardsel.classList.remove("v");
             carta.classList.remove("v");
-        }
+
+}
         else {
             const carta1 = carta.querySelector(".l1");
             carta1.classList.remove("front");
@@ -86,9 +88,25 @@ function cardcomp(carta) {
     if (fim == null) {
         const tempo = document.querySelector('.time');
         alert('Você ganhou em ' + cont + ' jogadas! A duração do jogo foi de ' + tempo.innerHTML + ' segundos!')
+        let resposta = prompt("Gostaria de jogar novamente?")
+        reini(resposta);
     }
 }
+function reini(resposta) {
+    if (resposta == 'sim') {
+        let cards = document.querySelector('.cards')
+        cards.innerHTML = '';
+            principal();
+    }
+    else {
+        if (resposta == 'não') {
 
+        }
+        else {
+            reini(resposta);
+        }
+    }
+}
 
 
 

@@ -30,11 +30,13 @@
     align-items: center;
 }
 
-.card {
+.card{
     width: 117px;
     height: 146px;
     position: relative;
     margin-right: 34px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 
 }
 
@@ -49,6 +51,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    top:0px;
+    right: 0px;
     backface-visibility: hidden;
     transition: all 0.5s;
     transform-style: preserve-3d;
@@ -89,4 +93,8 @@
     .card{
       margin-bottom: 32px;
     }
+    .page{
+      height: 100%;
+    }
+
   }
