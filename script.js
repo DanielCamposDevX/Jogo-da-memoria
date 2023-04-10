@@ -1,23 +1,30 @@
 let cont = 0;
+let time = 0;
+setInterval(timer, 1000);
+function timer() {
+    time++;
+    let tempo = document.querySelector('.time');
+    tempo.innerHTML = time;
+}
 principal();
 
 
 function principal() {
     const cardtypes = [];
-    cardtypes[0] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/bobrossparrot.gif"></div> </li>';
-    cardtypes[1] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/bobrossparrot.gif"></div> </li>';
-    cardtypes[2] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/explodyparrot.gif"></div> </li>';
-    cardtypes[3] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/explodyparrot.gif"></div> </li>';
-    cardtypes[4] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/fiestaparrot.gif"></div> </li>';
-    cardtypes[5] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/fiestaparrot.gif"></div> </li>';
-    cardtypes[6] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/metalparrot.gif"></div> </li>';
-    cardtypes[7] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/metalparrot.gif"></div> </li>';
-    cardtypes[8] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/revertitparrot.gif"></div> </li>';
-    cardtypes[9] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/revertitparrot.gif"></div> </li>';
-    cardtypes[10] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/unicornparrot.gif"></div> </li>';
-    cardtypes[11] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/unicornparrot.gif"></div> </li>';
-    cardtypes[12] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/tripletsparrot.gif"></div> </li>';
-    cardtypes[13] = '<li onclick="turncard(this)" class="card v"> <div class="l1 face"><img src="./imagens/front 12.png"></div> <div class="l2 back-face face"><img class=img src="./imagens/tripletsparrot.gif"></div> </li>';
+    cardtypes[0] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/bobrossparrot.gif"></div> </li>';
+    cardtypes[1] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/bobrossparrot.gif"></div> </li>';
+    cardtypes[2] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/explodyparrot.gif"></div> </li>';
+    cardtypes[3] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/explodyparrot.gif"></div> </li>';
+    cardtypes[4] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/fiestaparrot.gif"></div> </li>';
+    cardtypes[5] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/fiestaparrot.gif"></div> </li>';
+    cardtypes[6] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/metalparrot.gif"></div> </li>';
+    cardtypes[7] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/metalparrot.gif"></div> </li>';
+    cardtypes[8] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/revertitparrot.gif"></div> </li>';
+    cardtypes[9] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/revertitparrot.gif"></div> </li>';
+    cardtypes[10] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/unicornparrot.gif"></div> </li>';
+    cardtypes[11] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/unicornparrot.gif"></div> </li>';
+    cardtypes[12] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/tripletsparrot.gif"></div> </li>';
+    cardtypes[13] = '<li data-test="card" onclick="turncard(this)" class="card v"> <div data-test="face-up-image" class="l1 face"><img src="./imagens/front 12.png"></div> <div data-test="face-down-image" class="l2 back-face face"><img class=img src="./imagens/tripletsparrot.gif"></div> </li>';
 
     const cardo = document.querySelector('.cards');
     let carts = [];
@@ -53,7 +60,7 @@ function cardcomp(carta) {
     cardsel = document.querySelector(".selected");
     console.log(cardsel);
     if (cardsel != null) {
-        if (cardsel.innerHTML == carta.innerHTML) {
+        if (cardsel.innerHTML == carta.innerHTML && cardsel != carta) {
             cardsel.classList.remove("selected");
             carta.classList.remove("selected");
             cardsel.classList.remove("v");
@@ -77,11 +84,12 @@ function cardcomp(carta) {
     const fim = document.querySelector(".v")
     console.log(fim)
     if (fim == null) {
-        alert('Parabéns!!! Você ganhou em ' + cont + ' jogadas')
-
+        const tempo = document.querySelector('.time');
+        alert('Você ganhou em ' + cont + ' jogadas! A duração do jogo foi de ' + tempo.innerHTML + ' segundos!')
     }
-
 }
+
+
 
 
 
